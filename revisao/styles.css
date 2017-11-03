@@ -1,0 +1,32 @@
+section{
+  display: flex;
+}
+
+/*Seletor mais forte é o mais especifico*/
+section div{
+  width: 33%;
+  background-color: red;
+}
+
+.azul{
+  background-color: blue;
+}
+
+section div.azul, section p.azul{
+  background-color: #00a
+}
+
+div{
+  width: 25%;
+  height: 200px;
+  background-color: #aaa;
+  border: 1px solid black;
+}
+
+div{
+  width: 50%;
+}
+
+#avatar{
+  background-color: green;
+}

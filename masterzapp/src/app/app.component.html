@@ -1,0 +1,9 @@
+<div>
+  <p *ngFor="let mensagem of mensagens">{{conteudo}}</p>
+
+</div>
+
+<div>
+  <textarea #textarea></textarea>
+  <button (click)="enviar(textarea.value)">Enviar</button>
+</div>

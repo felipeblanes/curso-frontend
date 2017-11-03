@@ -1,0 +1,16 @@
+// Esse arquivo é utizado para inserir todas as cores utilizadas no projeto.
+// Geralmente cria-se arquivo para cada tipo de configuracao
+// Criar variavel com cor
+// $cor-primaria: #3245de;
+// $cor-perigo: #d41123;
+
+$theme-colors: (
+  primary: #e78024,
+  secondary: #96293e,
+  success: #8dff29,
+  info: #29ebff,
+  warning: #ffea29,
+  danger: #ff4229,
+  light: #cafcf6,
+  dark: #02423a
+);

@@ -1,0 +1,35 @@
+<script type="text/javascript">
+  // let numeros = [10, 20, 1, 2.3, 'não sou um número'];
+
+  let numeros = [10, 20, 1, 5, 7];
+
+  function impares(){
+    // for fazendo iteracao para varrer todo o vetor numeros
+    for (let numero of numeros) {
+      //retorna quais valores são pares ou impares
+      //console.log(numero % 2);
+      if(numero % 2 == 1){
+        console.log(`O número ${numero} é impar`); //Interpolacao de variaveis em string
+      }
+    }
+  }
+
+  function soma(){
+    let acumulador = 0;
+    for (let numero of numeros){
+      acumulador = acumulador + numero;
+    }
+    console.log(soma);
+  }
+
+  function maior(){
+    let maior = 0;
+    for (let numero of numeros){
+      if(numero > maior){
+        maior = numero;
+      }
+    }
+    console.log(maior);
+  }
+
+</script>

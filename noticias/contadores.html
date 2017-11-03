@@ -1,0 +1,19 @@
+<div>0</div>
+<div>0</div>
+<div>0</div>
+
+<script>
+  const divs = document.querySelectorAll('div');
+
+  for(let div of divs){
+    div.addEventListener('mouseover', (event) => {
+      event.target.innerHTML++;
+    })
+  }
+
+  // const div1 = document.querySelector('div');
+  //
+  // div1.addEventListener('click', (event) => {
+  //   event.target.innerHTML++;
+  // })
+</script>

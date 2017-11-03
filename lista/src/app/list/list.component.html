@@ -1,0 +1,9 @@
+
+
+<ul>
+  <li *ngFor="let tarefa of tarefasNaLista" (click)="fazer(tarefa)" [ngClass]="{ 'riscado': tarefa.feita == true }">{{tarefa.titulo}}</li>
+</ul>
+
+
+
+

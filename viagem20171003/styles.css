@@ -1,0 +1,33 @@
+body{
+  margin: 0;
+}
+
+h1{
+  text-align: center;
+  font-size: 55px;
+}
+
+/*Alinhando imagem no centro*/
+/*Para indicar que é uma classe no CSS deve incluir um . no inicio*/
+.banner{
+  width: 90%;
+  /*margin: 5%;*/
+  margin: auto;
+  display: block;
+}
+
+.margin{
+    margin: 0 5%; /*Margem 0 encima e embaixo e 5% na esquerda e direita*/
+}
+
+#imagem1{
+  border: 1px solid red;
+}
+
+section{
+  text-align: justify;
+}
+
+footer{
+  font-size: 10px;
+}

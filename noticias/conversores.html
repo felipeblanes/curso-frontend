@@ -1,0 +1,46 @@
+<div class="box-moeda">
+  <h3>Conversor Reais - Dólares</h3>
+  <input type="text">
+  <p></p>
+</div>
+
+<div class="box-peso">
+  <h3>Conversor Libras - Kilos</h3>
+  <input type="text">
+  <p></p>
+</div>
+
+
+<script type="text/javascript">
+  const valorDolar = 0.31602;
+  const valorLibra = 0.453592;
+  const inputReal = document.querySelector('.box-moeda input');
+  const pReal = document.querySelector('.box-moeda p');
+  const inputLibra = document.querySelector('.box-peso input');
+  const pLibra = document.querySelector('.box-peso p');
+
+  // const vetorzinho = ['a', 'b', 'c'];
+  // vetorzinho[3] = 'd';
+
+  const converterParaDolar = (reais) => {
+    return reais * valorDolar;
+  };
+
+  const converterParaLibra = (libra) => {
+    return libra * valorLibra;
+  };
+
+  // Executa uma acao quando o elemento "Input" for alterado (change). A variavel event grava todas as informacoes desse evento de de mudanca
+  // Evento keyup atualiza quando termina de clicar
+  inputReal.addEventListener('change', (event) => {
+    console.log(event);
+    pReal.innerHTML = converterParaDolar(event.target.value);
+  })
+
+  inputLibra.addEventListener('change', (event) => {
+    console.log(event);
+    pLibra.innerHTML = converterParaLibra(event.target.value);
+  })
+
+
+</script>

@@ -1,0 +1,15 @@
+@import "../assets/scss/color";
+
+nav{
+  background-color: $azul;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+span{
+  font-size: 24px;
+  color: white;
+}
+/*O CSS do componente só funciona para elementos dentro do proprio componente*/
+/*O span que está no próprio index.html não é afetado*/

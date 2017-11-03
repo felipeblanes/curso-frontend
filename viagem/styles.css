@@ -1,0 +1,65 @@
+body{
+  margin: 0;
+}
+
+h1{
+  text-align: center;
+  font-size: 55px;
+}
+
+/*Alinhando imagem no centro*/
+/*Para indicar que é uma classe no CSS deve incluir um . no inicio*/
+.banner{
+  width: 90%;
+  /*margin: 5%;*/
+  margin: auto;
+  display: block;
+}
+
+.margin{
+    margin: 0 5%; /*Margem 0 encima e embaixo e 5% na esquerda e direita*/
+}
+
+#imagem1{
+  border: 1px solid red;
+}
+
+section{
+  text-align: justify;
+}
+
+input, textarea{
+  width: 100%;
+  margin: 5px 0;
+  font-size: 12px;
+  resize: none;
+}
+
+button{
+  border: 0;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  padding: 7px 25px;
+}
+
+.modal{
+  width: 50%;
+  border: 1px solid gray;
+  /*position: absolute; Torna a posicao do elemento absolutamente na página (livre na pagina)*/
+  position: fixed; /*Torna a posicao do elemento absolutamente em relacao a tela*/
+  left: 25%; /*Posiciona o elemento na página*/
+  top: 250px; /*Posiciona o elemento na página*/
+  background-color: white;
+  padding: 3%;
+  border-radius: 15px;
+  display: none;
+}
+
+input{
+  height: 20px;
+}
+
+footer{
+  font-size: 10px;
+}

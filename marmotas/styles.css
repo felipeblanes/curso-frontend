@@ -1,0 +1,72 @@
+body{
+  margin: 0;
+  font-family: 'Indie Flower', cursive;
+}
+
+
+.banner{
+  position: relative;
+}
+
+/*Atinge todas as imagem que estão dentro da classe banner. img.banner atingiria uma imagem com a classe banner*/
+.banner img{
+  width: 100%;
+}
+
+/*O elemento de posicao absoluta flutua dentro do primeiro de posicao relativa pai dele*/
+.banner h1{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 30px;
+}
+
+.grid{
+  /*Coloca todos os elementos dentro dessa seccao em uma unica linha*/
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid div{
+  position: relative;
+  width: 33.333%;
+  margin-top: -8px;
+}
+
+.grid div img{
+  width: 100%;
+}
+
+.grid p{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+}
+
+/*Cria uma condicao de configuracao especifica para um tamanho máximo de tela*/
+@media(max-width: 600px){
+  .banner div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    opacity: 0.4;
+  }
+
+  .banner h1{
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .grid{
+    display: block;
+  }
+
+  .grid div{
+    width: 100%;
+  }
+}

@@ -1,0 +1,58 @@
+<!--
+    EX: Botões
+
+    Programar os botões para que eles apliquem o efeito descrito na div.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Botoes</title>
+    </head>
+    <body>
+        <style>
+            body{
+                margin: 0;
+            }
+
+            section{
+                width: 100%;
+                display: flex;
+            }
+
+            div{
+                display: block;
+                width: 20%;
+                height: 20vh;
+                margin: auto;
+                border: 1px solid black;
+            }
+        </style>
+
+        <div class="divEfeitos"></div>
+
+        <section>
+            <button onclick="pintarVermelho()">Pintar de vermelho</button>
+            <button onclick="removerBorda()">Remover borda</button>
+            <button onclick="ocuparTela()">Ocupar 100% da tela</button>
+        </section>
+
+        <script type="text/javascript">
+          let div = document.querySelector('.divEfeitos');
+
+          function pintarVermelho(){
+            div.style.backgroundColor = 'red';
+          }
+
+          function removerBorda(){
+            div.style.border = '0px';
+          }
+
+          function ocuparTela(){
+            div.style.width = '100%';
+          }
+
+        </script>
+    </body>
+</html>

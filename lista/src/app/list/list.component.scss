@@ -1,0 +1,14 @@
+//Aplica as funcoes no proprio componente, no caso app-list (elemento pai)
+:host{
+  padding: 0px 10%;
+  display: block;
+  font-size: 24px;
+}
+
+li{
+  margin: 10px 10%;
+}
+
+.riscado{
+  color: aqua;
+}

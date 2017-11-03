@@ -1,0 +1,29 @@
+// Muda a cor azul padrao do bootstrap (NOTA tem q ficar antes do import)
+// $blue: #0000ff;
+
+@import './cores';
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+// // Importa as informacoes de cores do arquivo .cores.scss (. indica que busca o arquivo a aprtir da pasta que o arquivo main.scss esta)
+// @import './cores';
+//
+// body{
+//   background-color: blue;
+// }
+//
+// section{
+//   width: 100%;
+//   background-color: $cor-primaria;
+//   height: 200px;
+//
+//   .box{
+//     border: 2px solid black;
+//
+//     p{
+//       color: black;
+//       font-size: 20px;
+//       text-shadow: 1px 1px $cor-perigo;
+//     }
+//   }
+// }
